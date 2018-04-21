@@ -1,8 +1,8 @@
-.highlight {
-    background-color: #ddd;
+/*.highlight {
+  backgroundn-color:#ddd;
 }
 
-button.btn {
+/*.button {
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -10,4 +10,126 @@ button.btn {
   line-height: 1.15;
   text-align: center;
   vertical-align: middle;
+}*/
+.btn {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 3px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  color: #4B4BC7;
+  padding: 15px 20px;
+  border: 1px solid lightgrey;
+  font-size: 18px;
+  width: 175px;
+  border-radius: 4px;
+}
+
+/*$white:blue;
+ $blue:white; 
+ $white:white;
+ $font-size:18px;
+ $border-color:lightgrey;*/
+/* $backgroundBtn1: white;
+ $textColorBtn1:blue;
+ $textColorBtn2: white;
+ $backgroundBtn2: blue;
+ $font-size:18px;
+ $border-color:lightgrey;
+
+ @mixin btn($color,$background-color,$width,$line-height){
+  border-radius: 3px;
+  border-style:solid;
+  border-width:3px;
+  font-weight:normal;
+  line-height:1;
+  text-align:center;
+  vertical-align:middle;
+  background-color:$background-color;
+  color:$color;
+  margin:4px 2px;
+  padding:15px 20px;
+  border:1px solid lightgrey;
+  font-size:18px;
+ width:175px;
+  border-radius:4px;
+
+ &:hover{
+   background-color:$color;
+   color:$background-color;
+   border-color:$border-color;
+   }
+ &:focus {
+   outline:none;
+ }
+ }
+ 
+ //
+ /*.btn {
+  @include btn($textColorBtn1,$backgroundBtn1);
+ }
+  button.btn--default{
+    @include btn($textColorBtn1,$backgroundBtn1); 
+   }
+ button.btn--primary { 
+  @include btn($textColorBtn2,$backgroundBtn2);
+ }
+ button.btn--default{
+  @include btn($textColorBtn1,$backgroundBtn1); 
+ }*/
+button.btn--default {
+  padding: 16px 62px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  color: #0000FF;
+  border-radius: 3px;
+  font-size: 20px;
+  text-align: center;
+}
+
+button.btn--primary {
+  padding: 16px 62px;
+  border: 1px solid #cbcbcb;
+  background: #0000FF;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 20px;
+  text-align: center;
+}
+
+button.btn--secondary {
+  padding: 16px 62px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  color: #0000FF;
+  border-radius: 3px;
+  font-size: 20px;
+  text-align: center;
+}
+
+button.btn--large {
+  padding: 16px 130px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  color: #0000FF;
+  border-radius: 3px;
+  font-size: 20px;
+  text-align: center;
+}
+
+button.btn--extra-large {
+  padding: 22px 180px;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  color: #0000FF;
+  border-radius: 3px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #fff;
 }

@@ -1,0 +1,62 @@
+
+.btn {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 3px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  color:#4B4BC7;
+  padding: 15px 20px;
+  border: 1px solid lightgrey;
+  font-size: 18px;
+  width: 175px;
+  border-radius:4px;
+} 
+$blue: #0000FF;
+$white: #fff;
+$grey: #cbcbcb;
+
+@mixin btn($color, $background-color,$padding) {
+  padding: $padding;
+  border: 1px solid  $grey ;
+  background:$background-color;
+  color:$color;
+  border-radius: 3px;
+  font-size: 20px;
+  text-align:center;
+  font-weight: bold;
+}
+button.btn--default {
+ @include btn($blue,$white,18px 60px);
+}
+
+button.btn--primary {
+@include btn($white,$blue,18px 60px);
+}
+button.btn--secondary {
+@include btn($light-grey,$grey,18px 60px);
+}
+button.btn--large {
+@include btn($blue,$white,18px 130px);
+}
+button.btn--extra-large {
+@include btn($blue,$white,35px 178px);  
+}
+
+.highlight {
+    background-color: #fff;
+}
+ /*
+ &:hover{
+   background-color:$color;
+   color:$background-color;
+   border-color:$border-color;
+   }
+ &:focus {
+   outline:none;
+ }
+ }*/
+ 
